@@ -42,6 +42,14 @@ public class Usuarios {
         return validacion;
     }
     
+    public int getCantidad(){
+        return usuarios.size();
+    }
+    
+    public Usuario getUsuarioIndice(int i){
+        return usuarios.get(i);
+    }
+    
     
     
 }

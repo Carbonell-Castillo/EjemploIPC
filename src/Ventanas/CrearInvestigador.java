@@ -143,7 +143,7 @@ public class CrearInvestigador extends javax.swing.JFrame {
         
 
         //Lo agrega a la lista global
-        Listas.SG.listadoUsuarios.AgregarUsuario(usuarioAgregar);
+        Listas.SG.listadoUsuarios.AgregarUsuario(new Usuario(codigo, contraseña, nombre, genero, 0));
 
         JOptionPane.showMessageDialog(null, "Se agrego correctamente");
 
@@ -152,6 +152,9 @@ public class CrearInvestigador extends javax.swing.JFrame {
     private void btnMostrar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMostrar1ActionPerformed
         // TODO add your handling code here:
         Listas.SG.listadoUsuarios.imprimirUsuarios();
+        ListadoUsuarios listadoUsuarios = new ListadoUsuarios();
+        listadoUsuarios.setVisible(true);
+                
     }//GEN-LAST:event_btnMostrar1ActionPerformed
 
     /**
